@@ -148,6 +148,10 @@
 						$submit.disabled = true;
 
 					// Process form.
+					$input = document.querySelectorAll('#email')[0];
+					gtag('event', 'sign_up', {
+					  'email': $input.value
+					});
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
 						window.setTimeout(function() {
