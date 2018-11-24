@@ -148,7 +148,7 @@
 						$submit.disabled = true;
 
 					// Process form.
-					$input = document.querySelectorAll('#email')[0];
+					var $input = document.querySelectorAll('#email')[0];
 					gtag('event', 'sign_up', {
 					  'email': $input.value
 					});
